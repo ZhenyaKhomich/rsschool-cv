@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    padding: 20 auto;
+    padding: 20px auto;
     text-align:cente;
     min-height: 100vh;
     max-width: 1440px;
@@ -13,7 +13,54 @@ body {
     background-position: 0px;
     background-size: 100% 100%; 
 }
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration:none; 
+}
+.menu-ul {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+    margin: 0px 30px 0px 0px;
+    padding: 0;
+}
+.menu-li a {
+    color: white;
+    font-size: 24px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.main-left {
 
+border-right: solid 10px rgb(252, 252, 252);
+margin: 20px;
+}
+.main-right {
+    margin: 0px; 
+}
+.photo {
+    margin: 0px 20px 0px 0px;
+    max-width: 768px;
+    text-align: center;
+}
+.my-photo {
+    width: 100%;
+    border-radius: 100%;
+    aspect-ratio: 4/6;
+    border:solid 1px silver;
+    box-shadow: 0 0 50px 10px rgb(208, 198, 198);
+}
+.my-name{
+color: rgb(21, 13, 2);
+
+
+}
 
 
 

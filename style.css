@@ -1,3 +1,7 @@
-* {
-    background: red;
+body {
+    background-image: url(/img/n.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size: auto 100%;
+    max-width: 1440px;
 }

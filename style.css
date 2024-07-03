@@ -1,7 +1,34 @@
 body {
-    background-image: url(/img/n.jpg);
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding: 20 auto;
+    text-align:cente;
+    min-height: 100vh;
+    max-width: 1440px;
+    scroll-behavior: smooth;
+}
+.container  {
+   background-image: url(/img/n.jpg);
     background-repeat: no-repeat;
     background-position: 0px;
-    background-size: auto 100%;
-    max-width: 1440px;
+    background-size: 100% 100%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.a{
+    box-shadow: inset 0 0 90px white;
+    border-radius: 30px;
+    
+    
+
 }

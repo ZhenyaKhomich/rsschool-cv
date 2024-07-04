@@ -7,18 +7,22 @@ body {
     scroll-behavior: smooth;
 }
 .container  {
-   background-image: url(/img/n.jpg);
+    background-image: url(/img/n.jpg);
     background-repeat: no-repeat;
     background-position: 0px;
     background-size: 100% 100%; 
     padding: 0px 0px;
-
 }
 li {
     list-style-type: none;
 }
-a{
+a {
     text-decoration:none; 
+}
+.code-pre, .about-me-text, .experience-text, .education {
+    box-shadow: inset 1px 1px 100px black, 1px 1px 10px black;
+    box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    border-radius: 20px;
 }
 .menu-ul {
     display: flex;
@@ -37,6 +41,11 @@ a{
     padding: 10px;
     font-weight: bold;
     text-shadow: 2px 2px 10px black, 0 0 1px black;
+}
+.menu-li :hover {
+    box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
+    text-shadow: 3px 3px 20px rgb(176, 0, 0);
+    border-radius: 30%;
 }
 .main {
     display: flex;
@@ -76,7 +85,6 @@ h2{
 .contacts-ul, .skills-ul, .languages-ul {
     padding: 0px;
 }
-
 .contacts-ul, .skills-ul, .languages-ul, .education-ul {
     display: flex;
     flex-direction: column;
@@ -107,6 +115,7 @@ h2{
     line-height: 35px;
     white-space:pre-wrap;
     text-align: justify;
+    padding: 10px;
 }
 .education-li {
     color: white;
@@ -129,14 +138,24 @@ h2{
 .code-pre {
     color: white;
     font-size: 24px;
-    text-shadow: 2px 2px 10px black, 0 0 1px black;
-    box-shadow: inset 1px 1px 210px black, 1px 1px 20px black;
-    white-space:pre-wrap;
+    margin: 0px 0px 0px 0px ;
+    max-height: 200px;
 }
-span {
-    margin: 0px 0px 0px -150px;
+.code {
+    margin: 0px 0px 0px -150px ;
 }
-
+.script {
+    color: red;
+}
+.alert {
+    color: blueviolet;
+}
+.let {
+    color: rgb(7, 192, 26); 
+}
+.body {
+    color: rgb(242, 246, 6); 
+}
 .footer {
     display: flex;
     justify-content: space-between;

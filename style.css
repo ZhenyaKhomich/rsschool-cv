@@ -31,18 +31,20 @@ a{
 .menu-li a {
     color: white;
     font-size: 24px;
+    font-weight: bold;
 }
 .main {
     display: flex;
     justify-content: space-between;
 }
 .main-left {
-
-border-right: solid 10px rgb(252, 252, 252);
-margin: 20px;
+    border-right: solid 10px rgb(252, 252, 252);
+    margin: 20px;
+    min-width: 25%;
 }
 .main-right {
     margin: 0px; 
+    
 }
 .photo {
     margin: 0px 20px 0px 0px;
@@ -56,13 +58,17 @@ margin: 20px;
     border:solid 1px silver;
     box-shadow: 0 0 50px 10px rgb(208, 198, 198);
 }
-.my-name{
-color: rgb(21, 13, 2);
-
-
+.my-name {
+    font-size: 55px;
 }
-
-
+h2{
+    color:white;
+    font-style: italic;
+    font-size: 35px;
+}
+.contacts-ul, .skills-ul, .languages-ul {
+    padding: 0px;
+}
 
 
 

@@ -226,18 +226,31 @@ h2{
         flex-direction: column;
         position: relative;
         gap: 1px;
-        height: 60px;
+        height: 50px;
         padding: 10px 10px;
         margin:0px 10px 0px 0px;
-        width: 70px;
+        width: 60px;
+        z-index: 1;
     }
-
     .burger-line {
         color:aliceblue;
         width: 40px;
         height: 5px;
         box-shadow: inset -10px 1px 8px 1px white;
     }    
+    .line {
+        transform: scale(0);
+    }
+    .burger-menu.lin::after {
+        bottom:50%;
+        transform: rotate(45deg) translate(0, 50%);
+        background-color: red;
+    }
+    .burger-menu.lin::before {
+        top: 50%; 
+        transform: rotate(-45deg) translate(0, -50%);
+        background-color: red;
+    }
     .burger-menu:after, .burger-menu:before  {
         content: '';
         position: absolute;
@@ -246,30 +259,40 @@ h2{
         height: 5px;
         box-shadow: inset -10px 1px 8px 1px white;
     }    
-
     .burger-menu:after {
-        bottom:20px;
+        bottom:18px;
     }
     .burger-menu:before {
-        top: 20px;
+        top: 18px;
     }
     .burger-menu:hover {
     box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
     text-shadow: 3px 3px 20px rgb(176, 0, 0);
     border-radius: 30%;
+    cursor: pointer
     }
     .menu-burg {
         display: flex;
         flex-direction: column;
         align-items:center;
+        position: absolute;
         flex-grow: 0;
-        gap: 10px;
+        gap: 15px;
         height: 260px;
         padding: 40px 40px 40px 40px;
-        width: 200px;
+        width: 100%;
         margin: 0;
-        box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+        background-image: url(/img/n.jpg);
+        background-repeat: no-repeat;
+        background-position: 0px;
+        background-size: 100% 100%; 
+        padding: 80px 0px 20px 0px;
     }
+    .mai {
+        opacity: 0;
+        
+    }
+    
     .my-name {
         font-size: 44px;
     }

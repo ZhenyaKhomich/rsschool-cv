@@ -24,19 +24,14 @@ a {
     box-shadow:  1px 1px 100px black, 1px 1px 10px black;
     border-radius: 20px;
 }
-.burger-menu {
+.header {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px 20px 10px 10px;
-    align-items: end;
-    display: none;
+    align-items: flex-end;
+    box-shadow:  1px 1px 100px black, 1px 1px 10px black;
 }
-.burger-line {
-    color:aliceblue;
-    width: 70px;
-    height: 12px;
-    box-shadow: inset -10px 1px 8px 1px white;
+.burger-menu {
+    display: none;
 }
 .menu-ul {
     display: flex;
@@ -46,26 +41,12 @@ a {
     height: 70px;
     padding: 0px 20px 0px 0px;
     margin: 0;
-    box-shadow: inset 1px 1px 100px black, 1px 1px 10px black;
-    box-shadow:  1px 1px 100px black, 1px 1px 10px black;
     flex-grow: 1;
 }
 .menu {
     display: flex;
     justify-content: end;
-}
-.menu-burg {
-    display: flex;
-    flex-direction: column;
-    align-items:end;
-    flex-grow: 0;
-    gap: 10px;
-    height: 260px;
-    padding: 40px 40px 0px 0px;
-    width: 200px;
-    margin: 0;
-    box-shadow: inset 1px 1px 100px black, 1px 1px 10px black;
-    box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    flex-grow: 1;
 }
 .menu-li a {
     color: white;
@@ -128,12 +109,13 @@ h2{
     display: flex;
     align-items: center;
     gap: 15px;
-    text-shadow: 2px 2px 10px white, 0 0 1px white;
+    text-shadow: 2px 2px 5px white, 0 0 1px rgb(0, 0, 0);
 }
 .contacts-li a {
     color: white;
     font-style: italic;
     font-weight:100;
+    text-shadow: 2px 2px 10px rgb(8, 8, 8), 0 0 1px rgb(2, 2, 2);
 }
 .contacts-li:hover a{
     color: rgb(0, 255, 0);
@@ -141,10 +123,16 @@ h2{
 .contacts-li:hover img {
     box-shadow:  1px 1px 20px rgb(239, 238, 234);
 }
-.contacts-logo, .skills-logo{
+.contacts-logo, .skills-logo, .languages-logo {
     box-shadow: inset 0 0 90px white;
     border-radius: 30px;
     width: 50px;
+}
+.education-logo {
+    width: 50px;
+}
+.star-logo{
+    width: 30px;
 }
 .about-me-text, .experience-text {
     color: white;
@@ -169,6 +157,7 @@ h2{
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0px 0px 10px 0px;
 }
 .sertificats img {
     max-width: 340px;
@@ -197,7 +186,8 @@ h2{
 .footer {
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    align-items: center;
+    height: 80px;
     padding: 0px 20px 0px 20px;
     margin: 0;
     box-shadow: inset 1px 1px 100px black, 1px 1px 10px black;
@@ -215,4 +205,501 @@ h2{
     font-weight: bold;
     margin: 0;
     color: silver
+}
+
+
+
+@media(max-width : 1000px) {
+    .main {
+        padding: 18px;
+    }
+    .main-left {
+        margin: 18px;
+    }
+    .menu-ul {
+        display: none;
+    }
+    .burger-menu {
+        display: flex; 
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        gap: 1px;
+        height: 60px;
+        padding: 10px 10px;
+        margin:0px 10px 0px 0px;
+        width: 70px;
+    }
+
+    .burger-line {
+        color:aliceblue;
+        width: 40px;
+        height: 5px;
+        box-shadow: inset -10px 1px 8px 1px white;
+    }    
+    .burger-menu:after, .burger-menu:before  {
+        content: '';
+        position: absolute;
+        color:aliceblue;
+        width: 60px;
+        height: 5px;
+        box-shadow: inset -10px 1px 8px 1px white;
+    }    
+
+    .burger-menu:after {
+        bottom:20px;
+    }
+    .burger-menu:before {
+        top: 20px;
+    }
+    .burger-menu:hover {
+    box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
+    text-shadow: 3px 3px 20px rgb(176, 0, 0);
+    border-radius: 30%;
+    }
+    .menu-burg {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        flex-grow: 0;
+        gap: 10px;
+        height: 260px;
+        padding: 40px 40px 40px 40px;
+        width: 200px;
+        margin: 0;
+        box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    }
+    .my-name {
+        font-size: 44px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    .contacts-ul, .skills-ul, .languages-ul, .education-ul {
+        gap: 16px;
+    }
+    .contacts-li, .skills-li, .languages-li {
+        font-size: 16px;
+        gap: 12px;
+    }
+    .contacts-logo, .skills-logo, .languages-logo {
+        border-radius: 30px;
+        width: 40px;
+    }
+    .education-logo {
+        width: 40px;
+    }
+    .star-logo{
+        width: 25px;
+    }
+    .about-me-text, .experience-text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .education-li {
+        font-size: 20px;
+        gap: 12px;
+    }
+    .sertificats {
+        gap: 10px;
+    }
+    .code-pre {
+        font-size: 20px;
+    }
+    .code {
+        margin: 0px 0px 0px -90px ;
+    }
+    .footer {
+        height: 60px;
+    }
+    .fot-img {
+        height: 54px;
+    }
+    .year {
+        font-size: 50px;
+    }
+}
+
+@media(max-width : 768px) {
+    .main {
+        padding: 15px;
+    }
+    .main-left {
+        margin: 15px;
+    }
+    .menu-ul {
+        display: none;
+    }
+    .burger-menu {
+        height: 50px;
+        width: 50px;
+    }
+    .burger-line {
+        color:aliceblue;
+        width: 30px;
+        height: 5px;
+        box-shadow: inset -10px 1px 8px 1px white;
+    }    
+    .burger-menu:after, .burger-menu:before  {
+        width: 50px;
+        height: 5px;
+    }    
+    .burger-menu:after {bottom:15px;}
+    .burger-menu:before {top: 15px;}
+
+    .burger-menu:hover {
+    box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
+    text-shadow: 3px 3px 20px rgb(176, 0, 0);
+    border-radius: 40%;
+    }
+    .menu-burg {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        flex-grow: 0;
+        gap: 10px;
+        height: 260px;
+        padding: 40px 40px 40px 40px;
+        width: 200px;
+        margin: 0;
+        box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    }
+    .my-name {
+        font-size: 30px;
+    }
+    h2{
+        font-size: 19px;
+    }
+    .contacts-ul, .skills-ul, .languages-ul, .education-ul {
+        gap: 10px;
+    }
+    .contacts-li, .skills-li, .languages-li {
+        font-size: 10px;
+        gap: 8px;
+    }
+    .contacts-logo, .skills-logo, .languages-logo {
+        border-radius: 30px;
+        width: 28px;
+    }
+    .education-logo {
+        width: 28px;
+    }
+    .star-logo{
+        width: 20px;
+    }
+    .about-me-text, .experience-text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .education-li {
+        font-size: 12px;
+        gap: 8px;
+    }
+    .sertificats {
+        gap: 7px;
+    }
+    .code-pre {
+        font-size: 14px;
+    }
+    .code {
+        margin: 0px 0px 0px -60px ;
+    }
+    .footer {
+        height: 45px;
+    }
+    .fot-img {
+        height: 40px;
+    }
+    .year {
+        font-size: 30px;
+    }
+}
+
+@media(max-width : 611px) {
+    .main {
+        padding: 13px;
+    }
+    .main-left {
+        margin: 13px;
+    }
+    .menu-ul {
+        display: none;
+    }
+    .burger-menu {
+        height: 40px;
+        width: 40px;
+        padding: 7px;
+    }
+    .burger-line {
+        color:aliceblue;
+        width: 30px;
+        height: 3px;
+        box-shadow: inset -10px 1px 8px 1px white;
+    }    
+    .burger-menu:after, .burger-menu:before  {
+        width: 45px;
+        height: 3px;
+    }    
+    .burger-menu:after {bottom:15px;}
+    .burger-menu:before {top: 15px;}
+
+    .burger-menu:hover {
+    box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
+    text-shadow: 3px 3px 10px rgb(176, 0, 0);
+    border-radius: 50%;
+    }
+    .menu-burg {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        flex-grow: 0;
+        gap: 10px;
+        height: 260px;
+        padding: 40px 40px 40px 40px;
+        width: 200px;
+        margin: 0;
+        box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    }
+    .my-name {
+        font-size: 25px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .contacts-ul, .skills-ul, .languages-ul, .education-ul {
+        gap: 9px;
+    }
+    .contacts-li, .skills-li, .languages-li {
+        font-size: 8px;
+        gap: 6px;
+    }
+    .contacts-logo, .skills-logo, .languages-logo {
+        border-radius: 30px;
+        width: 24px;
+    }
+    .education-logo {
+        width: 24px;
+    }
+    .star-logo{
+        width: 17px;
+    }
+    .about-me-text, .experience-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .education-li {
+        font-size: 8px;
+        gap: 6px;
+    }
+    .sertificats {
+        gap: 6px;
+    }
+    .sertificats img {
+        width: 250px;
+    }
+    .code-pre {
+        font-size: 12px;
+    }
+    .code {
+        margin: 0px 0px 0px -50px ;
+    }
+    .footer {
+        height: 40px;
+    }
+    .fot-img {
+        height: 35px;
+    }
+    .year {
+        font-size: 20px;
+    }
+}
+
+@media(max-width : 505px) { 
+    .main {
+        padding: 11px;
+    } 
+    .main-left {
+        margin: 11px;
+    }
+    .burger-menu:after, .burger-menu:before  {
+        width: 45px;
+        height: 3px;
+    }    
+    .burger-menu:after {bottom:15px;}
+    .burger-menu:before {top: 15px;}
+
+    .burger-menu:hover {
+    box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
+    text-shadow: 3px 3px 10px rgb(176, 0, 0);
+    border-radius: 50%;
+    }
+    .menu-burg {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        flex-grow: 0;
+        gap: 10px;
+        height: 260px;
+        padding: 40px 40px 40px 40px;
+        width: 200px;
+        margin: 0;
+        box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    }
+    .my-name {
+        font-size: 20px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    .contacts-ul, .skills-ul, .languages-ul, .education-ul {
+        gap: 7px;
+    }
+    .contacts-li, .skills-li, .languages-li {
+        font-size: 6px;
+        gap: 5px;
+    }
+    .contacts-logo, .skills-logo, .languages-logo {
+        border-radius: 30px;
+        width: 20px;
+    }
+    .education-logo {
+        width: 20px;
+    }
+    .star-logo{
+        width: 17px;
+    }
+    .about-me-text, .experience-text {
+        font-size: 8px;
+        line-height: 12px;
+    }
+    .education-ul{
+        margin: 0px 0px 10px -20px;
+    }
+    .education-li {
+        font-size: 6px;
+        gap: 5px;
+    }
+    .sertificats {
+        gap: 5px;
+    }
+    .sertificats img {
+        width: 180px;
+    }
+    .code-pre {
+        font-size: 8px;
+    }
+    .code {
+        margin: 0px 0px 0px -40px ;
+    }
+    .footer {
+        height: 40px;
+    }
+    .fot-img {
+        height: 35px;
+    }
+    .year {
+        font-size: 20px;
+    }
+}
+@media(max-width : 400px) { 
+    .main {
+        padding: 10px;
+    }
+    .main-left {
+        margin: 10px;
+    }
+    .header{
+        height: 40px;
+    } 
+    .burger-menu {
+        height: 35px;
+        width: 35px;
+        padding: 0px;
+    }
+    .burger-line {
+        color:aliceblue;
+        width: 20px;
+        height: 2px;
+        box-shadow: inset -10px 1px 8px 1px white;
+    }       
+    .burger-menu:after, .burger-menu:before  {
+        width: 28px;
+        height: 2px;
+    }    
+    .burger-menu:after {bottom:8px;}
+    .burger-menu:before {top: 8px;}
+
+    .burger-menu:hover {
+    box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
+    text-shadow: 3px 3px 10px rgb(176, 0, 0);
+    border-radius: 50%;
+    }
+    .menu-burg {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        flex-grow: 0;
+        gap: 10px;
+        height: 260px;
+        padding: 40px 40px 40px 40px;
+        width: 200px;
+        margin: 0;
+        box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    }
+    .my-name {
+        font-size: 20px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    .contacts-ul, .skills-ul, .languages-ul, .education-ul {
+        gap: 6px;
+    }
+    .contacts-li, .skills-li, .languages-li {
+        font-size: 6px;
+        gap: 5px;
+    }
+    .contacts-logo, .skills-logo, .languages-logo .education-logo {
+        border-radius: 30px;
+        width: 20px;
+    }
+    .education-logo {
+        width: 20px;
+    }
+    .star-logo{
+        width: 16px;
+    }
+    .about-me-text, .experience-text {
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .education-ul{
+        margin: 0px 0px 10px -30px;
+    }
+    .education-li {
+        font-size: 6px;
+        gap: 5px;
+    }
+    .sertificats {
+        gap: 5px;
+    }
+    .sertificats img {
+        width: 170px;
+    }
+    .code-pre {
+        font-size: 8px;
+    }
+    .code {
+        margin: 0px 0px 0px -40px ;
+    }
+    .footer {
+        height: 35px;
+    }
+    .fot-img {
+        height: 25px;
+    }
+    .year {
+        font-size: 15px;
+    }
 }

@@ -24,6 +24,20 @@ a {
     box-shadow:  1px 1px 100px black, 1px 1px 10px black;
     border-radius: 20px;
 }
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px 10px 10px;
+    align-items: end;
+    display: none;
+}
+.burger-line {
+    color:aliceblue;
+    width: 70px;
+    height: 12px;
+    box-shadow: inset -10px 1px 8px 1px white;
+}
 .menu-ul {
     display: flex;
     justify-content:end;
@@ -31,6 +45,24 @@ a {
     gap: 15px;
     height: 70px;
     padding: 0px 20px 0px 0px;
+    margin: 0;
+    box-shadow: inset 1px 1px 100px black, 1px 1px 10px black;
+    box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    flex-grow: 1;
+}
+.menu {
+    display: flex;
+    justify-content: end;
+}
+.menu-burg {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    flex-grow: 0;
+    gap: 10px;
+    height: 260px;
+    padding: 40px 40px 0px 0px;
+    width: 200px;
     margin: 0;
     box-shadow: inset 1px 1px 100px black, 1px 1px 10px black;
     box-shadow:  1px 1px 100px black, 1px 1px 10px black;
@@ -103,6 +135,12 @@ h2{
     font-style: italic;
     font-weight:100;
 }
+.contacts-li:hover a{
+    color: rgb(0, 255, 0);
+}
+.contacts-li:hover img {
+    box-shadow:  1px 1px 20px rgb(239, 238, 234);
+}
 .contacts-logo, .skills-logo{
     box-shadow: inset 0 0 90px white;
     border-radius: 30px;
@@ -168,8 +206,13 @@ h2{
 .fot-img {
     height: 70px;
 }
+.fot-img:hover {
+    box-shadow: inset 1px 1px 100px white;
+    border-radius: 100px;
+}
 .year {
     font-size: 60px;
     font-weight: bold;
     margin: 0;
+    color: silver
 }

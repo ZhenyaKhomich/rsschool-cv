@@ -198,6 +198,8 @@ h2{
 }
 .fot-img {
     height: 70px;
+    border: solid 1px white;
+    border-radius: 50%;
 }
 .fot-img:hover {
     box-shadow: inset 1px 1px 100px white;

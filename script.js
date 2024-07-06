@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 menuUl.classList.remove("menu-burg");
                 line.classList.remove("line");
                 burger.classList.remove("lin");
-                
             }
     });
 });

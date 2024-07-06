@@ -59,6 +59,7 @@ a {
     box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
     text-shadow: 3px 3px 20px rgb(176, 0, 0);
     border-radius: 30%;
+    transition: 0.8s;
 }
 .main {
     display: flex;
@@ -67,7 +68,7 @@ a {
 }
 .main-left {
     border-right: solid 10px rgb(252, 252, 252);
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
     min-width: 30%;
 }
 .main-right {
@@ -119,9 +120,11 @@ h2{
 }
 .contacts-li:hover a{
     color: rgb(0, 255, 0);
+    transition: 0.8s;
 }
 .contacts-li:hover img {
     box-shadow:  1px 1px 20px rgb(239, 238, 234);
+    transition: 0.8s;
 }
 .contacts-logo, .skills-logo, .languages-logo {
     box-shadow: inset 0 0 90px white;
@@ -199,6 +202,7 @@ h2{
 .fot-img:hover {
     box-shadow: inset 1px 1px 100px white;
     border-radius: 100px;
+    transition: 0.8s;
 }
 .year {
     font-size: 60px;
@@ -212,9 +216,6 @@ h2{
 @media(max-width : 1000px) {
     .main {
         padding: 18px;
-    }
-    .main-left {
-        margin: 18px;
     }
     .menu-ul {
         display: none;
@@ -269,7 +270,8 @@ h2{
     box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
     text-shadow: 3px 3px 20px rgb(176, 0, 0);
     border-radius: 30%;
-    cursor: pointer
+    cursor: pointer;
+    transition: 0.8s;
     }
     .menu-burg {
         display: flex;
@@ -287,12 +289,20 @@ h2{
         background-position: 0px;
         background-size: 100% 100%; 
         padding: 80px 0px 20px 0px;
+        animation: menu 1s;
     }
-    .mai {
-        opacity: 0;
-        
+    @keyframes menu {
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
-    
+    @keyframes menua {
+        from {opacity: 1;}
+        to {opacity: 0;}
+    }
+    .main-left {
+        border-right: solid 9px rgb(252, 252, 252);
+        margin: 18px 18px 18px 0px;
+    }
     .my-name {
         font-size: 44px;
     }
@@ -348,9 +358,6 @@ h2{
     .main {
         padding: 15px;
     }
-    .main-left {
-        margin: 15px;
-    }
     .menu-ul {
         display: none;
     }
@@ -375,6 +382,7 @@ h2{
     box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
     text-shadow: 3px 3px 20px rgb(176, 0, 0);
     border-radius: 40%;
+    transition: 0.8s;
     }
     .menu-burg {
         display: flex;
@@ -383,10 +391,18 @@ h2{
         flex-grow: 0;
         gap: 10px;
         height: 260px;
-        padding: 40px 40px 40px 40px;
-        width: 200px;
+        padding: 40px 0px 20px 0px;
+        width: 100%;
         margin: 0;
         box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    }
+    .main-left {
+        border-right: solid 7px rgb(252, 252, 252);
+        margin: 16px;
+        margin: 15px 15px 15px 0px;
+    }
+    .photo {
+        margin: 0px 15px 0px 0px;
     }
     .my-name {
         font-size: 30px;
@@ -443,9 +459,6 @@ h2{
     .main {
         padding: 13px;
     }
-    .main-left {
-        margin: 13px;
-    }
     .menu-ul {
         display: none;
     }
@@ -471,6 +484,7 @@ h2{
     box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
     text-shadow: 3px 3px 10px rgb(176, 0, 0);
     border-radius: 50%;
+    transition: 0.8s;
     }
     .menu-burg {
         display: flex;
@@ -478,11 +492,22 @@ h2{
         align-items:center;
         flex-grow: 0;
         gap: 10px;
-        height: 260px;
-        padding: 40px 40px 40px 40px;
-        width: 200px;
+        height: 240px;
+        padding: 20px 0px 10px 0px;
+        width: 100%;
         margin: 0;
         box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    }
+    .menu-li a {
+        font-size: 20px;
+    }
+    .main-left {
+        border-right: solid 7px rgb(252, 252, 252);
+        margin: 16px;
+        margin: 12px 12px 12px 0px;
+    }
+    .photo {
+        margin: 0px 12px 0px 0px;
     }
     .my-name {
         font-size: 25px;
@@ -542,9 +567,6 @@ h2{
     .main {
         padding: 11px;
     } 
-    .main-left {
-        margin: 11px;
-    }
     .burger-menu:after, .burger-menu:before  {
         width: 45px;
         height: 3px;
@@ -556,6 +578,7 @@ h2{
     box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
     text-shadow: 3px 3px 10px rgb(176, 0, 0);
     border-radius: 50%;
+    transition: 0.8s;
     }
     .menu-burg {
         display: flex;
@@ -563,14 +586,25 @@ h2{
         align-items:center;
         flex-grow: 0;
         gap: 10px;
-        height: 260px;
-        padding: 40px 40px 40px 40px;
-        width: 200px;
+        height: 240px;
+        padding: 20px 0px 10px 0px;
+        width: 100%;
         margin: 0;
         box-shadow:  1px 1px 100px black, 1px 1px 10px black;
     }
+    .menu-li a {
+        font-size: 20px;
+    }
     .my-name {
         font-size: 20px;
+    }
+    .main-left {
+        border-right: solid 7px rgb(252, 252, 252);
+        margin: 16px;
+        margin: 12px 12px 12px 0px;
+    }
+    .photo {
+        margin: 0px 12px 0px 0px;
     }
     h2{
         font-size: 12px;
@@ -629,9 +663,6 @@ h2{
     .main {
         padding: 10px;
     }
-    .main-left {
-        margin: 10px;
-    }
     .header{
         height: 40px;
     } 
@@ -657,6 +688,7 @@ h2{
     box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
     text-shadow: 3px 3px 10px rgb(176, 0, 0);
     border-radius: 50%;
+    transition: 0.8s;
     }
     .menu-burg {
         display: flex;
@@ -664,11 +696,22 @@ h2{
         align-items:center;
         flex-grow: 0;
         gap: 10px;
-        height: 260px;
-        padding: 40px 40px 40px 40px;
-        width: 200px;
+        height: 240px;
+        padding: 20px 0px 10px 0px;
+        width: 100%;
         margin: 0;
         box-shadow:  1px 1px 100px black, 1px 1px 10px black;
+    }
+    .main-left {
+        border-right: solid 7px rgb(252, 252, 252);
+        margin: 16px;
+        margin: 10px 10px 10px 0px;
+    }
+    .photo {
+        margin: 0px 10px 0px 0px;
+    }
+    .menu-li a {
+        font-size: 20px;
     }
     .my-name {
         font-size: 20px;

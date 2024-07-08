@@ -186,8 +186,9 @@ h2{
 .body {
     color: rgb(242, 246, 6); 
 }
-.pro {
-    margin: 0px 0px 0px 50px;
+.pro-div {
+    display: flex;
+    justify-content: center;
 }
 .pro img {
     width: 300px;
@@ -218,8 +219,6 @@ h2{
     margin: 0;
     color: silver
 }
-
-
 
 @media(max-width : 1000px) {
     .main {
@@ -452,6 +451,9 @@ h2{
     .code {
         margin: 0px 0px 0px -60px ;
     }
+    .pro img {
+        width: 250px;
+    }
     .footer {
         height: 45px;
     }
@@ -560,6 +562,9 @@ h2{
     .code {
         margin: 0px 0px 0px -50px ;
     }
+    .pro img {
+        width: 200px;
+    }
     .footer {
         height: 40px;
     }
@@ -656,6 +661,9 @@ h2{
     }
     .code {
         margin: 0px 0px 0px -40px ;
+    }
+    .pro img {
+        width: 150px
     }
     .footer {
         height: 40px;
@@ -766,6 +774,9 @@ h2{
     }
     .code {
         margin: 0px 0px 0px -40px ;
+    }
+    .pro img {
+        width: 120px;
     }
     .footer {
         height: 35px;

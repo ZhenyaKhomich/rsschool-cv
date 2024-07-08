@@ -186,6 +186,12 @@ h2{
 .body {
     color: rgb(242, 246, 6); 
 }
+.pro {
+    margin: 0px 0px 0px 50px;
+}
+.pro img {
+    width: 300px;
+}
 .footer {
     display: flex;
     justify-content: space-between;

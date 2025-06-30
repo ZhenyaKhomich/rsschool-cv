@@ -2,7 +2,7 @@
 # ***Zhenya Khomich***
 
 
-![my photo](/imgages/myFoto.jpg)
+![my photo](./images/myFoto.jpg)
 
 # ***Zhenya Khomich***
 
@@ -35,9 +35,9 @@ console.log(+c);
 *I have minimal practical experience in layout. I have no commercial experience.*
 
 ## Education
-![my photo](/imgages/sertificat1.jpg)
-![my photo](/imgages/sertificat2.jpg)
-![my photo](/imgages/sertificat3.jpg)
+![my photo](./images/sertificat1.jpg)
+![my photo](./images/sertificat2.jpg)
+![my photo](./images/sertificat3.jpg)
 
 ## Languages
 * Russia  (native)

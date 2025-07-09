@@ -73,7 +73,7 @@ a {
 
 .menu-li a {
   color: white;
-  font-size: 24px;
+  font-size: 23px;
   padding: 10px;
   font-weight: bold;
   text-shadow: 2px 2px 10px black, 0 0 1px black;
@@ -367,8 +367,13 @@ code {
   color: silver
 }
 
+@media(max-width: 1100px) {
+  .menu-li a {
+    font-size: 21px;
+  }
+}
 
-@media(max-width : 1000px) {
+@media(max-width: 1000px) {
   .main-block {
       padding: 18px;
   }

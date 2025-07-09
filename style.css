@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   max-width: 1440px;
   scroll-behavior: smooth;
-  background-image: url("images/fone.jpg");
+  background-image: url("images/fone-menu.jpg");
   background-repeat: no-repeat;
   background-position: 0px;
   background-size: 100% 100%; 
@@ -22,6 +22,7 @@ body {
   background-size: 100% 100%; 
   box-shadow: 0 0 50px 5px white;
   margin: 5px;
+  position: relative;
 }
 
 .container  {
@@ -121,12 +122,12 @@ a {
   border-radius: 100%;
   aspect-ratio: 3/4;
   border:solid 1px silver;
-  box-shadow: 0 0 10px 10px rgb(220, 215, 113);
+  box-shadow: 0 0 15px 5px #691D1FFF;
 }
 
 .my-name {
   font-size: 55px;
-  filter: drop-shadow(0 0 1px rgb(248, 236, 0));
+  filter: drop-shadow(0 0 1px #691D1FFF);
   /* text-shadow:  0 0 10px rgb(153, 153, 9); */
 }
 
@@ -155,6 +156,21 @@ h2{
   gap: 15px;
   white-space: nowrap;
   text-shadow: 2px 2px 5px white, 0 0 1px rgb(0, 0, 0);
+}
+
+.skills-logo {
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  0%   { transform: scale(1);
+    box-shadow: 0 0 10px 1px rgb(247, 142, 142) }
+  50%   { 
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 1px red;
+   }
+  100%   { transform: scale(1);
+    box-shadow: 0 0 10px 1px rgb(247, 142, 142);}
 }
 
 .contacts-li {
@@ -333,6 +349,10 @@ code {
   border-radius: 5px;
 }
 
+.foot {
+  border: 0;
+}
+
 .fot-img:hover {
   box-shadow: 1px 1px 10px 3px rgb(96, 213, 6);
   border-radius: 10px;
@@ -346,6 +366,7 @@ code {
   margin: 0;
   color: silver
 }
+
 
 @media(max-width : 1000px) {
   .main-block {
@@ -367,7 +388,7 @@ code {
     padding: 10px 10px;
     margin:0px 10px 0px 0px;
     width: 60px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .burger-line {
@@ -411,8 +432,8 @@ code {
   }
 
   .burger-menu:hover {
-    box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
-    text-shadow: 3px 3px 20px rgb(176, 0, 0);
+    box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(246, 238, 6);
+    text-shadow: 3px 3px 20px rgb(246, 238, 6);
     border-radius: 30%;
     cursor: pointer;
     transition: 0.8s;
@@ -420,6 +441,7 @@ code {
 
   .menu-burg {
     display: flex;
+    width: 100vh;
     flex-direction: column;
     align-items:center;
     position: absolute;
@@ -429,12 +451,13 @@ code {
     padding: 40px 40px 40px 40px;
     width: 100%;
     margin: 0;
-    background-image: url("img/n.jpg");
+    background-image: url("images/fone-menu.jpg");
     background-repeat: no-repeat;
     background-position: 0px;
     background-size: 100% 100%; 
     padding: 80px 0px 20px 0px;
     animation: menu 1s;
+    z-index: 1;
   }
 
   @keyframes menu {
@@ -543,8 +566,8 @@ code {
   .burger-menu:before {top: 15px;}
 
   .burger-menu:hover {
-    box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93);
-    text-shadow: 3px 3px 20px rgb(176, 0, 0);
+    /* box-shadow: 0px 0px 40px white, 1px 1px 10px rgb(93, 5, 93); */
+    text-shadow: 3px 3px 20px rgb(161, 176, 0);
     border-radius: 40%;
     transition: 0.8s;
   }
@@ -559,7 +582,6 @@ code {
     padding: 40px 0px 20px 0px;
     width: 100%;
     margin: 0;
-    background-color: rgba(77, 77, 75, 0.9);
     box-shadow:  1px 1px 100px black, inset 1px 1px 10px black;
   }
 
@@ -685,8 +707,8 @@ code {
   .burger-menu:before {top: 15px;}
 
   .burger-menu:hover {
-    box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
-    text-shadow: 3px 3px 10px rgb(176, 0, 0);
+    /* box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93); */
+    text-shadow: 3px 3px 10px rgb(246, 238, 6);
     border-radius: 50%;
     transition: 0.8s;
   }
@@ -806,8 +828,8 @@ code {
   .burger-menu:before {top: 15px;}
 
   .burger-menu:hover {
-    box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
-    text-shadow: 3px 3px 10px rgb(176, 0, 0);
+    /* box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93); */
+    text-shadow: 3px 3px 10px rgb(246, 238, 6);
     border-radius: 50%;
     transition: 0.8s;
   }
@@ -952,8 +974,8 @@ code {
   .burger-menu:before {top: 8px;}
 
   .burger-menu:hover {
-    box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93);
-    text-shadow: 3px 3px 10px rgb(176, 0, 0);
+    /* box-shadow: 0px 0px 20px white, 1px 1px 10px rgb(93, 5, 93); */
+    text-shadow: 3px 3px 10px rgb(246, 238, 6);
     border-radius: 50%;
     transition: 0.8s;
   }

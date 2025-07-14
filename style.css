@@ -38,7 +38,6 @@ a {
 }
 
 .code-pre, .about-me-text, .experience-text, .education {
-  /* box-shadow: inset 1px 1px 100px black, 1px 1px 10px black; */
   box-shadow:  1px 1px 40px black, inset 1px 1px 5px black;
   border-radius: 20px;
 }
@@ -271,12 +270,14 @@ h2{
   font-size: 22px;
   margin: -0px 0px 0px 0px ;
   max-height: 250px;
+  justify-content: left;
 }
 
 code {
-  max-width: 100%;
+  /* max-width: 200px; */
   text-align: left;
   padding: 0;
+  display: inline-block;
 }
 
 .code {
@@ -324,7 +325,7 @@ code {
 
 .footer {
   width: 100%;
-  padding: 20px 0;
+  margin-top: 20px;
 }
 
 .footer .container {
@@ -338,7 +339,7 @@ code {
   align-items: center;
   height: 80px;
   box-shadow:  1px 1px 4px rgb(156, 146, 146), inset 1px 1px 10px rgb(192, 184, 184);
-  padding: 0 20px;
+  padding: 20px 20px;
   background-color: transparent;
 }
 
